@@ -42,7 +42,7 @@
 
   - name: relaod the system
     ansible.builtin.systemd_service:
-    daemon_reload: true
+      daemon_reload: true
 
   - name: start the user service
     ansible.builtin.service:
