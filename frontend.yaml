@@ -27,7 +27,7 @@
   - name: download the application file
     ansible.builtin.get_url:
       url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
-      path: /tmp/frontend.zip
+      dest: /tmp/frontend.zip
 
   - name: create html directory
     ansible.builtin.file:
